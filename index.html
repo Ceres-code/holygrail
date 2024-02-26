@@ -1,65 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <title>The holy grail</title>
-    <style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Button Example</title>
+</head>
+<body>
 
+    
+    <button id="myButton">Click me!</button>
 
-      .containerbs{
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        max-width: 700px;
-        border-sizing: border-box;
-        padding: 20px;
-        background: green;
-        text-color: black;
-        position: center;
-      
+    
+    <script>
         
-      }
+        var myButton = document.getElementById("myButton");
 
-
-      .navbar{
-        position: absolute;
-        text-align: center;
-        border: 3px;
-        text-size: 36px;
-        padding: 20xp;
-        margin: 10px;
-        text-color: White;
-      }
         
+        myButton.addEventListener("click", function() {
+            
+            alert("Button clicked! You can replace this with any action you want.");
+        });
+    </script>
 
-
-      .main-box{
-        position: absolute;
-        background: pink;
-        border-sizing: border-box;
-        border: 3px solid black;
-        align-items: center;
-        margin: 0;
-        padding: 20px;
-        text-color: black;
-      }
-        
-    </style>
-  </head>
-
-  <body>
-
-    <div class="containerbs">
-      <h1>Mila!</h1>
-
-    <div class="main-box">
-      <p>Hey, whats up?</p>
-
-    <div class=navbar">
-      <p>Penis?</p>
-    </div>
-    </div>  
-    </div>
-  </body>
+</body>
+</html>
