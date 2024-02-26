@@ -40,7 +40,7 @@
     <body>
         <div class="circle">
         
-       <p><span id="imageLink" style="color: black; text-size: 100px; cursor: pointer; text-decoration: underline;">ponyo sucks!</span></p>
+       <p><span id="imageLink" style="color: black; cursor: pointer; text-decoration: underline;">ponyo sucks!</span></p>
 
     
     <img id="myImage" src="ponyo.jpg" alt="ponyo sucks" style="display: none;">
@@ -48,6 +48,7 @@
     <script>
         
         var imageLink = document.getElementById("imageLink");
+        imageLink.style.fontSize = "100px";
 
         
         imageLink.addEventListener("click", function() {
