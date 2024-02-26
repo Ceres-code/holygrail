@@ -9,24 +9,38 @@
     <style>
 
         .circle{
-            circle-border: 3px solid black;
-            width: 100%;
-            max-width: 300px;
-            radius: 100px;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
             background-color: green;
-            text-align: center;
-            text-color: black;
-            margin: 10px auto;
-            padding: 20px;
+            
         }
 
             
             
     </style>
 
+    <body>
+        <div class="circle">
+        
+        <p>Click on the <span id="imageLink" style="color: blue; cursor: pointer; text-decoration: underline;">word</span> to open the image.</p>
 
-    <div class="circle">
-       <hyperlink><p>Ponyo sucks!</p></hyperlink>
-        <img rel="Ponyo sucks!" href="ponyo.jpg">
-    </div>
+    
+    <img id="myImage" src="ponyo.jpg" alt="ponyo sucks" style="display: none;">
+
+    <script>
+        
+        var imageLink = document.getElementById("imageLink");
+
+        
+        imageLink.addEventListener("click", function() {
+            
+            var myImage = document.getElementById("myImage");
+            myImage.style.display = "block";
+        });
+    </script>
+        </div>      
+    </body>
+</html>
+
         
