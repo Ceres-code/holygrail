@@ -1,1 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    background: url(fury.jpg) no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+    /*background: green;*/
+    position: absolute;
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(18px);
+    z-index: 1;
+
+}
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+
+
+}
+
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    font-size: 16px;
+    color:aliceblue;
+    padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder{
+    color:aliceblue
+}
+
+
+
+.container .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0px 15px;
+
+}
+
+.remember-forgot label input{
+    color: aliceblue;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+
+}
+
+.container .btn{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-decoration-break: 0px 0px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+}
+
+.container .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0px 20px;
+
+}
+
+.register-link p a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.alien-play {
+    position: absolute;
+    font-size: 36px;
+    text-align: top;
+    color: aliceblue;
+    justify-content: center;
+    width: 600px;
+    height: 700px;
+    display: flex;
+    
+
+    /*animation: Mydrop;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;*/
+
+    /*animation: Mycolor;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;*/
+
+    animation: Myopac;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+       
+}
+
+@keyframes Mydrop{
+
+    from{margin-top: -100%}
+    to{margin-top: 0%;}
+}
+
+@keyframes Mycolor{
+    20%{text-color: rgb(180, 232, 172);}
+    50%{text-color: rgb(102, 240, 129);}
+    80%{text-color: rgb(53, 245, 50);}
+    100%{text-color: #0cfa00;}
+}
+
+@keyframes Myopac{
+    50%{opacity: 0;}
+}
+
+.ryan-overlay{
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 930px;
+    margin-top: 405px;
+    padding: 0;
+    max-width: 500%;
+    z-index: -1;
+    max-height: 100vh;
+    overflow: hidden;
+    
+
+
+
+    animation: RyanG;
+    animation-duration: 8s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    }
+
+/*
+.ryanspeaks{
+    box-sizing: border-box;
+    border: 3px solid black;
+    width: 300px;
+    padding: 10px;
+    box-shadow: #333;
+    margin: auto;
+    background: white;
+    font-size: 18px;
+    color: black;
+    justify-content: right;
+    display: flex;
+    position: fixed;
+    border-radius: 20px;
+    text-align: center;
+    z-index: -2;
+
+    animation: Ryry;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease
+    
+}*/
+
+
+
+
+@keyframes RyanG{
+
+    from{transform: translateY(500px) ;}
+    to{transform: translateY(0);}
+}
+
+/*
+@keyframes Ryry{
+
+    from{transform: translateX(1000%) ;}
+    to{transform: translateX(850%);}
+}*/
+
+
+.bgn {
+    border: 3px solid black;
+    border-radius: 10px;
+    background: linear-gradient(rgba(0, 128, 0, 0.732), rgb(31, 125, 168));
+    cursor: pointer black;
+    padding: 20px 30px;
+    margin: 50px 50px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    align-items: center;
+    
+}
+
+.alien-question{
+    position: absolute;
+    font-size: 36px;
+    text-align: top;
+    color: aliceblue;
+    justify-content: center;
+    width: 600px;
+    height: 700px;
+    display: flex;
+}
+
+.container2{
+    /*background: green;*/
+    position: relative;
+    width: 420px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color:aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(18px);
+    z-index: 1;
+}
+
+.container2 h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.container2 .input-boxq{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+
+}
+
+.container2 .ya{
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: space-around;
+    margin: 10px;
+    align-items: first baseline;
+}
+
+.container2 .na{
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.theirc{
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 930px;
+    margin-top: 405px;
+    padding: 0;
+    max-width: 500%;
+    z-index: -1;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+
+/*.container3 {
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 40%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color:rgb(231, 236, 241);
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(18px);
+    background: rgba(47, 45, 45, 0.577);
+    
+     
+}
+
+
+
+#yes-btn {
+    border: 3px solid rgba(224, 212, 212, 0.668);
+    border-radius: 10px;
+    background:rgba(53, 245, 50, 0.59);
+    text-align: center;
+    padding: 10px 40px;
+    margin: 50px 20px;
+    font-size: 16px;
+    justify-content: space-between;
+    cursor: pointer;
+    color: aliceblue;
+    
+    
+    
+}
+
+#no-btn {
+    border: 3px solid rgba(232, 221, 221, 0.668);
+    border-radius: 10px;
+    background:rgba(206, 52, 13, 0.56);
+    text-align: center;
+    padding: 10px 40px;
+    margin: 50px 20px;
+    font-size: 16px;
+    justify-content: space-between;
+    cursor: pointer;
+    color: aliceblue;
+    
+    
+    
+}
+    
+
+
+#recotitles{
+    font-size: large;
+    color:aliceblue;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+#question-text {
+    font-size: 20px;
+    color: white;
+}*/
+
+
+  
 
